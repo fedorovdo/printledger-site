@@ -1,8 +1,8 @@
 # PrintLedger Landing Page
 
-This repository contains the single-page landing site for PrintLedger, a self-hosted open-source web system for managing printers, cartridges, consumables, stock movements, repairs, locations, users, and backup operations inside a local network.
+This repository contains the bilingual single-page landing site for PrintLedger, a self-hosted open-source web system for managing printers, cartridges, consumables, stock movements, repairs, locations, users, and backup operations inside a local network.
 
-The site is built with Vite, React, TypeScript, and plain CSS. It is intended for public project presentation and deployment to Cloudflare Pages.
+The site is built with Vite, React, TypeScript, and plain CSS. Russian is the default language, English is available from the header language switcher, and screenshots switch with the selected language. The site is intended for public project presentation and deployment to Cloudflare Pages.
 
 ## Local Development
 

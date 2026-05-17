@@ -18,6 +18,7 @@
 }
 
 .brand,
+.top-nav-right,
 .nav-links,
 .hero-actions,
 .footer-links {
@@ -45,6 +46,11 @@
   box-shadow: var(--shadow-soft);
 }
 
+.top-nav-right {
+  justify-content: flex-end;
+  gap: 16px;
+}
+
 .nav-links {
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -61,6 +67,41 @@
 .nav-links a:hover,
 .footer a:hover {
   color: var(--accent);
+}
+
+.language-switcher {
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 3px;
+  padding: 3px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: #ffffff;
+  box-shadow: var(--shadow-soft);
+}
+
+.language-switcher button {
+  min-width: 42px;
+  min-height: 30px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.language-switcher button:hover,
+.language-switcher button.active {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.language-switcher button:focus-visible {
+  outline: 2px solid rgba(37, 99, 235, 0.35);
+  outline-offset: 2px;
 }
 
 .hero-grid {
@@ -364,6 +405,7 @@ h3 {
   }
 
   .top-nav,
+  .top-nav-right,
   .footer {
     align-items: flex-start;
     flex-direction: column;
