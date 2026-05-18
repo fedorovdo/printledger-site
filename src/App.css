@@ -180,6 +180,14 @@ h3 {
   gap: 12px;
 }
 
+.demo-note {
+  margin-top: 14px;
+  max-width: 600px;
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
 .button {
   display: inline-flex;
   align-items: center;

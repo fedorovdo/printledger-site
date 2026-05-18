@@ -16,6 +16,7 @@ type ScreenshotKey = 'dashboard' | 'printers' | 'cartridges' | 'backup'
 const githubUrl = 'https://github.com/fedorovdo/printledger'
 const docsUrl = 'https://github.com/fedorovdo/printledger#documentation'
 const supportUrl = 'mailto:YOUR_EMAIL_HERE'
+const demoUrl = 'https://demo.printledger.simplyadmin.org'
 
 const screenshotImages: Record<Language, Record<ScreenshotKey, string>> = {
   ru: {
@@ -53,6 +54,8 @@ const translations = {
       github: 'GitHub',
       docs: 'Документация',
       support: 'Коммерческая поддержка',
+      demo: 'Попробовать демо',
+      demoNote: 'Демо-версия работает без backend и базы данных. Данные тестовые, изменение данных отключено.',
     },
     problem: {
       eyebrow: 'Проблема',
@@ -77,7 +80,7 @@ const translations = {
     },
     screenshots: {
       eyebrow: 'Интерфейс',
-      title: 'Скриншоты',
+      title: 'Скриншоты и интерактивное демо',
       items: {
         dashboard: {
           title: 'Dashboard',
@@ -138,6 +141,8 @@ const translations = {
       github: 'GitHub',
       docs: 'Documentation',
       support: 'Commercial Support',
+      demo: 'Try demo',
+      demoNote: 'The demo runs without backend or database. Data is mock-only, and changes are disabled.',
     },
     problem: {
       eyebrow: 'Problem',
@@ -162,7 +167,7 @@ const translations = {
     },
     screenshots: {
       eyebrow: 'Screenshots',
-      title: 'Core workflows in one interface',
+      title: 'Screenshots and interactive demo',
       items: {
         dashboard: {
           title: 'Dashboard',
@@ -257,6 +262,9 @@ function App() {
             <p className="subtitle">{t.hero.subtitle}</p>
             <p className="hero-description">{t.hero.description}</p>
             <div className="hero-actions" aria-label={t.hero.actionsAria}>
+              <a className="button primary" href={demoUrl}>
+                {t.hero.demo}
+              </a>
               <a className="button primary" href={githubUrl}>
                 {t.hero.github}
               </a>
@@ -267,6 +275,7 @@ function App() {
                 {t.hero.support}
               </a>
             </div>
+            <p className="demo-note">{t.hero.demoNote}</p>
           </div>
 
           <div className="hero-preview" aria-label={t.hero.previewAlt}>

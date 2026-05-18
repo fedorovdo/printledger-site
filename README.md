@@ -4,6 +4,12 @@ This repository contains the bilingual single-page landing site for PrintLedger,
 
 The site is built with Vite, React, TypeScript, and plain CSS. Russian is the default language, English is available from the header language switcher, and screenshots switch with the selected language. The site is intended for public project presentation and deployment to Cloudflare Pages.
 
+Public interactive demo:
+
+```text
+https://demo.printledger.simplyadmin.org
+```
+
 ## Local Development
 
 Install dependencies:
